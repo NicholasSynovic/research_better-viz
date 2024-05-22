@@ -12,6 +12,7 @@ pandas = "^2.2.2"
 seaborn = "^0.13.2"
 plotly = "^5.22.0"
 bokeh = "^3.4.1"
+selenium = "^4.21.0"
 
 
 [build-system]
