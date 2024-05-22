@@ -16,5 +16,6 @@ conn.close()
 
 print(df)
 
+# plot stats
 fig = px.line(df, x="index", y="file_count")
 pio.write_image(fig, "test.png", width=800, height=600)

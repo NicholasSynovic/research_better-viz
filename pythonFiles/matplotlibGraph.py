@@ -12,8 +12,7 @@ conn = sqlite3.Connection(database=sql_file_path)
 df = pd.read_sql_query("SELECT * FROM cloc LIMIT 10", con=conn)
 conn.close()
 
-# print stats onto terminal
-print(df["file_count"][0:10])
+print(df)
 
 # plot stats
 plt.locator_params(axis="x", integer=True)
