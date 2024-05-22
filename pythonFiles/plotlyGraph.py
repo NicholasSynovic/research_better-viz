@@ -18,4 +18,3 @@ print(df)
 
 fig = px.line(df, x="index", y="file_count")
 pio.write_image(fig, "test.png", width=800, height=600)
-# plotly.offline.plot(fig, filename='/home/anna/research_prettier-charts/pythonFiles/test.png')
