@@ -18,13 +18,12 @@
       - [Matplotlib](#matplotlib)
       - [Seaborn](#seaborn)
       - [Plotly](#plotly)
-      - [Summary](#summary)
   - [Rankings](#rankings)
 
 ## About
 
 This project is aimed at testing a variety of figure generating libraries to
-identify if any of them are capable of replacing `matplotlib`.
+identify if any of them are capable of replacing Matplotlib.
 
 All figures plot the same data (in `src/__init__.py`) as a line chart. All
 figures have the same title, x-axis label, and y-axis label. All figures are
@@ -66,6 +65,8 @@ We have tested this code on Linux x86-64 computers.
 This project is dependent upon:
 
 - Python 3.10
+- ImageMagick
+- `wc`
 
 ### Installation steps
 
@@ -76,7 +77,7 @@ This project is dependent upon:
 
 1. `cd src`
 1. `ls test_*.py | xargs -I % python %`
-1. `python generateMetrics.py`
+1. `./generateMetrics.bash`
 
 ## Results
 
@@ -90,31 +91,27 @@ of this document.
 
 #### Matplotlib
 
-- CLOC:
-- Figure file size:
-- Figure pixel count:
+- CLOC: 17
+- Figure file size: 28467
+- Figure pixel count: 640 X 480
 
 ![Matplotlib](src/img/matplotlib.png)
 
 #### Seaborn
 
-- CLOC:
-- Figure file size:
-- Figure pixel count:
+- CLOC: 17
+- Figure file size: 25155
+- Figure pixel count: 500 X 500
 
 ![Seaborn](src/img/seaborn.png)
 
 #### Plotly
 
-- CLOC:
-- Figure file size:
-- Figure pixel count:
+- CLOC: 14
+- Figure file size: 45121
+- Figure pixel count: 800 X 600
 
 ![Plotly](src/img/plotly.png)
-
-#### Summary
-
-TODO create summary fig
 
 ## Rankings
 
