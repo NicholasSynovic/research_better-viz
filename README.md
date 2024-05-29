@@ -1,25 +1,120 @@
-# Prettier charts
+# Prettier Charts Project
+
+> Small research project to identify a (potential) replacement for `matplotlib`
+> for generating figures
+
+## Table of Contents
+
+- [Prettier Charts Project](#prettier-charts-project)
+  - [Table of Contents](#table-of-contents)
+  - [About](#about)
+    - [Authors](#authors)
+  - [How to Install](#how-to-install)
+    - [Dependencies](#dependencies)
+    - [Installation steps](#installation-steps)
+  - [How to Run](#how-to-run)
+  - [Results](#results)
+    - [Figure Outputs and Data](#figure-outputs-and-data)
+      - [Matplotlib](#matplotlib)
+      - [Seaborn](#seaborn)
+      - [Plotly](#plotly)
+      - [Summary](#summary)
+  - [Rankings](#rankings)
 
 ## About
 
-The goal of the project was to compare data-plotting Python libraries:
-Matplotlib, Seaborn, and Plotly.
+This project is aimed at testing a variety of figure generating libraries to
+identify if any of them are capable of replacing `matplotlib`.
+
+All figures plot the same data (in `src/__init__.py`) as a line chart. All
+figures have the same title, x-axis label, and y-axis label. All figures are
+created using the minimum number of lines of code and imports.
+
+We quantitatively compare the figures by:
+
+- The number of lines of code to generate the figure (CLOC)
+- The file size of the output figure (in bytes)
+- The size of the figure (in pixels)
+
+We qualitatively compare the figures by:
+
+- Readibility
+- Default style
+
+We understand and accept that not everyone will agree with out qualitative
+assessments, however, we consider this project on a limited scope representative
+of the work being conducted within the Loyola University Chicago Software and
+Systems Laboratory.
+
+The follwoing libraries were tested:
+
+- Matplotlib
+- Seaborn
+- Plotly
+
+### Authors
+
+- Anna Grigores
+- Nicholas M. Synovic
 
 ## How to Install
 
-Describe what platform this code is meant to run on
+We have tested this code on Linux x86-64 computers.
 
 ### Dependencies
 
-List of dependencies
+This project is dependent upon:
+
+- Python 3.10
 
 ### Installation steps
 
-Steps describing how to install the software
+1. `make create-dev`
+1. `make build`
 
 ## How to Run
 
-Instructions on how to run the software
+1. `cd src`
+1. `ls test_*.py | xargs -I % python %`
+1. `python generateMetrics.py`
+
+## Results
+
+The following section contains the results of our work as well our findings
+
+### Figure Outputs and Data
+
+The following subsections contain the quantitave results per figure and
+generating code. A summary can be found within the [Summary](#summary) section
+of this document.
+
+#### Matplotlib
+
+- CLOC:
+- Figure file size:
+- Figure pixel count:
+
+![Matplotlib](src/img/matplotlib.png)
+
+#### Seaborn
+
+- CLOC:
+- Figure file size:
+- Figure pixel count:
+
+![Seaborn](src/img/seaborn.png)
+
+#### Plotly
+
+- CLOC:
+- Figure file size:
+- Figure pixel count:
+
+![Plotly](src/img/plotly.png)
+
+#### Summary
+
+TODO create summary fig
 
 ## Rankings
 
