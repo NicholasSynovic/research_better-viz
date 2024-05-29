@@ -6,11 +6,9 @@ authors = ["Nicholas M. Synovic <nicholas.synovic@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
-matplotlib = "^3.9.0"
+python = "^3.10"
 pandas = "^2.2.2"
-seaborn = "^0.13.2"
-plotly = "^5.22.0"
+matplotlib = "^3.9.0"
 
 
 [build-system]
