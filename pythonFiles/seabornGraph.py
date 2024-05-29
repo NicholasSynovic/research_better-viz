@@ -18,4 +18,6 @@ print(df)
 # plot stats
 sns.set_theme()
 sns.relplot(kind="line", x="index", y="file_count", data=df)
+plt.title("index and file count")
+plt.tight_layout()
 plt.savefig("test.png")

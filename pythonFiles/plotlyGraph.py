@@ -1,7 +1,7 @@
 # importing stuff
 import sqlite3
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import pandas as pd
 import plotly.express as px
 import plotly.io as pio
@@ -17,5 +17,5 @@ conn.close()
 print(df)
 
 # plot stats
-fig = px.line(df, x="index", y="file_count")
+fig = px.line(df, x="index", y="file_count", title="index and file count")
 pio.write_image(fig, "test.png", width=800, height=600)

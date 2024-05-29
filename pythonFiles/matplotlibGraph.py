@@ -15,6 +15,9 @@ conn.close()
 print(df)
 
 # plot stats
-plt.locator_params(axis="x", integer=True)
-df.plot.line(x="index", y="file_count", color="red")
+
+df.plot.line(x="index", y="file_count")
+plt.ylabel("file_count")
+plt.title("index and file count")
+plt.tight_layout()
 plt.savefig("test.png")
