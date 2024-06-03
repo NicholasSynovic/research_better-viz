@@ -18,7 +18,7 @@
       - [Matplotlib](#matplotlib)
       - [Seaborn](#seaborn)
       - [Plotly](#plotly)
-  - [Rankings](#rankings)
+  - [Summary](#summary)
 
 ## About
 
@@ -113,11 +113,16 @@ of this document.
 
 ![Plotly](src/img/plotly.png)
 
-## Rankings
+## Summary
 
-1. Seaborn. It looks good and was the easiest to use. It had high visibility for
-   text and subtle grid lines, and it was very straightforward to make.
-1. Matplotlib. It looks very plain, but was simple to implement. It didn't
-   require any extra imports.
-1. Plotly. While it looks good, it had low text visibility and was difficult to
-   save as a png rather than an html file.
+We found that Seaborn is the best choice for our purposes. Seaborn provides good
+looking defaults in comparison to Matplotlib while being straightforward to use.
+Additionally, while not a requirements, Seaborn wraps around the Matplolib API,
+allowing for further refinement of the figure post generation.
+
+Matplotlib was found difficult to use, with poor documentation and a reliance on
+ChatGPT to get simple figures.
+
+Plotly, while it did generate the prettiest of charts, was found difficult to
+export for offline distribution. To do so involved installing the `kaleido`
+library for handling conversion of the figure to an image file.
