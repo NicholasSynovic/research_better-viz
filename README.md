@@ -64,9 +64,9 @@ We have tested this code on Linux x86-64 computers.
 
 This project is dependent upon:
 
-- Python 3.10
-- ImageMagick
-- `wc`
+- [Python 3.10](https://www.python.org/downloads/release/python-3100/)
+- [ImageMagick](https://imagemagick.org/)
+- [`wc`](https://www.gnu.org/software/coreutils/)
 
 ### Installation steps
 
@@ -92,7 +92,7 @@ of this document.
 #### Matplotlib
 
 - CLOC: 17
-- Figure file size: 28467
+- Figure file size: 28,467 bytes
 - Figure pixel count: 640 X 480
 
 ![Matplotlib](src/img/matplotlib.png)
@@ -100,7 +100,7 @@ of this document.
 #### Seaborn
 
 - CLOC: 17
-- Figure file size: 25155
+- Figure file size: 25,155 bytes
 - Figure pixel count: 500 X 500
 
 ![Seaborn](src/img/seaborn.png)
@@ -108,7 +108,7 @@ of this document.
 #### Plotly
 
 - CLOC: 14
-- Figure file size: 45121
+- Figure file size: 45,121 bytes
 - Figure pixel count: 800 X 600
 
 ![Plotly](src/img/plotly.png)
