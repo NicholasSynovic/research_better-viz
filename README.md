@@ -53,7 +53,7 @@ The follwoing libraries were tested:
 
 ### Authors
 
-- Anna Grigores
+- Anna Grigorescu
 - Nicholas M. Synovic
 
 ## How to Install
